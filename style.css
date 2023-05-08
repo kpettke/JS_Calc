@@ -3,3 +3,41 @@
 html{
     font-family: 'Hepta Slab', serif;
 }
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing:initial;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(360deg, rgba(78, 255, 206, 1) 9%, rgba(41, 86, 75, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    height: 60vh;
+    min-width: 370px;
+    max-width: 370px;
+}
+
+.display{
+    width: 100%;
+    min-height: 20%;
+    max-height: min-content;
+    background-color: rgba(78, 239, 255, 0.15);
+    box-shadow: 16px 18px 49px -1px rgba(11, 50, 42, 1);
+    color: white;
+    word-break: break-all;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    font-weight: bold;
+    
+
+}
