@@ -19,9 +19,10 @@ body {
 }
 
 .calculator{
+    padding: 5%;
     height: 60vh;
-    min-width: 370px;
-    max-width: 370px;
+    min-width: 30vh;
+    max-width: 30vh;
 }
 
 .display{
