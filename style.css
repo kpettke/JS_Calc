@@ -19,26 +19,109 @@ body {
 }
 
 .calculator{
-    padding: 5%;
+    padding: 3%;
     height: 60vh;
-    min-width: 30vh;
-    max-width: 30vh;
+    min-width: 35vh;
+    max-width: 35vh;
 }
 
 .display{
-    width: 100%;
+ 
     min-height: 20%;
     max-height: min-content;
     background-color: rgba(78, 239, 255, 0.15);
-    box-shadow: 16px 18px 49px -1px rgba(11, 50, 42, 1);
+    box-shadow: 20px 4px 49px -10px rgba(11, 50, 42, 1);
     color: white;
     word-break: break-all;
     text-align: right;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 10px;
+    padding-right: 5px;
     font-weight: bold;
     
+    }
 
+.currNumber{
+    font-size: 35px;
+}
+
+.prevNumber{
+    color: rgb(184, 179, 179);
+    font-size: 18px;
+
+}
+
+.mathSign{
+    font-size: 20x;
+}
+
+.buttons {
+   
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: (5,1fr);
+    gap: 2px;
+    
+}
+
+.buttons button{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all .2s ease-in-out;
+
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.equ{
+    grid-row: 6/4;
+    grid-column: 4/5;
+}
+
+.calculator-hist
+{
+    height: 60vh;
+    width: 150px;
+    margin: 1px;
+    background-color: rgba(75, 239, 255, 0.15);
+    box-shadow: 20px 4px 49px -10px rgba(11, 50, 42, 1);
+    padding: 5px 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.hist-title {
+    padding-bottom: 10px;
+}
+
+.hist_btn{
+    color: white;
+    background:  rgba(2, 56, 61, 0.63);
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    margin: 5px auto;
+    display: none;
+}
+
+.hist_btn.active{
+    display: block;
+
+}
+.hist-item{
+    margin: 8px 0px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid;
+    list-style-type: none
 }
