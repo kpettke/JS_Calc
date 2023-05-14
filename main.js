@@ -25,16 +25,20 @@ function displayNumbers(){
 
 function operate(){
 
-    if (courrentNumber.innerHTML =='' && this.textContent !='-') return;
-    else{
-    courrentNumber.innerHTML +=this.textContent;
+    if(courrentNumber.innerHTML ==='' && this.textContent ==='-'){
+        courrentNumber.innerHTML='-'
+        return;
+    }
+    else if (courrentNumber.innerHTML==='')
+    {
+        return;
     }
 
     if(mathSign.innerHTML !==''){
         showResults()
     }
 
-    previousNumber.innerHTML += courrentNumber.innerHTML;
+    previousNumber.innerHTML = courrentNumber.innerHTML;
     mathSign.innerHTML = this.textContent;
     courrentNumber.innerHTML ='';
 
